@@ -1,0 +1,11 @@
+#spiner{
+display:none;
+width: 200px;
+margin: auto;
+}
+#spiner button{
+    margin-top: 200px;
+}
+#not-found{
+    display: none;
+}

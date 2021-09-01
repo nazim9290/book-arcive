@@ -8,22 +8,42 @@
     <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
     <title>Book archive</title>
 </head>
 
 <body>
-    <h1 class="text-primary text-center my-3">Search Book Name</h1>
+    <header>
+        <h1 class="text-primary text-center my-3">Search Book Name</h1>
 
-    <div class="input-group mb-3 mx-auto w-50">
+        <div class="input-group mb-3 mx-auto w-50">
 
-        <input type="text" class="form-control" placeholder="search book name" aria-label="search book name"
-            aria-describedby="button-addon2">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+            <input id="search" type="text" class="form-control" placeholder="search book name"
+                aria-label="search book name" aria-describedby="button-addon2">
+            <button onclick="displayBook()" class="btn btn-outline-secondary" type="button"
+                id="button-addon2">Button</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <p id="qtyBooks"></p>
+        <div id="books" class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+    </main>
+    <div id="spiner">
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+        </button>
     </div>
 
 
-
+    <div id="not-found" class="card text-center w-50 mt-5 m-auto">
+        <div class="card-header">
+            Sorry
+        </div>
+    </div>
 
     <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
