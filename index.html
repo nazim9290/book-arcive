@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <header>
         <h1 class="text-primary text-center my-3">Search Book Name</h1>
 
@@ -21,29 +22,30 @@
 
             <input id="search" type="text" class="form-control" placeholder="search book name"
                 aria-label="search book name" aria-describedby="button-addon2">
-            <button onclick="displayBook()" class="btn btn-outline-secondary" type="button"
-                id="button-addon2">Button</button>
+            <button onclick="displayBook()" class="btn btn-outline-secondary bg-primary text-white fw-bolder"
+                type="button" id="button-addon2">Button</button>
         </div>
     </header>
 
-    <main class="container">
+    <main class="container my-5">
+        <div id="book" class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
         <p id="qtyBooks"></p>
         <div id="books" class="row row-cols-1 row-cols-md-3 g-4">
         </div>
-    </main>
-    <div id="spiner">
-        <button class="btn btn-primary" type="button" disabled>
-            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-            Loading...
-        </button>
-    </div>
-
-
-    <div id="not-found" class="card text-center w-50 mt-5 m-auto">
-        <div class="card-header">
-            Sorry
+        <div id="spiner">
+            <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+            </button>
         </div>
-    </div>
+
+
+        <div id="not-found" class="card text-center w-50 mt-5 m-auto">
+
+        </div>
+    </main>
+
 
     <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"

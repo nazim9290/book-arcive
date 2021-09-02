@@ -1,3 +1,6 @@
+body{
+    background-color: #F0F2F5;
+}
 #spiner{
 display:none;
 width: 200px;
@@ -7,5 +10,17 @@ margin: auto;
     margin-top: 200px;
 }
 #not-found{
+    display: none;
+}
+#qtyBooks{
+    width: 200px;
+    text-align: center;
+    padding-right: 10px;
+    background-color:paleturquoise;
+    color: black;
+    font-weight: 500;
+    display: none;
+}
+#display{
     display: none;
 }
